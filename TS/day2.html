@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <style>
+        #gamesList {
+            list-style: none;
+            padding-left: 10%;
+            margin-right: 10%;
+        }
+
+        #gamesList li {
+            width: 200px;
+            display: inline-block;
+            border-radius: 15px;
+            box-shadow: 2px 2px 4px #333;
+            margin-right: 5px;
+            margin-top: 8px;
+            padding: 10px;
+            animation-delay: 0.5s;
+            padding-left: 5%;
+
+        }
+
+        #gamesList :hover {
+            scale: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Games</h1>
+
+
+    <button onclick="buildGames(parent, games)">Load Products</button>
+    <div id="productsContainer"></div>
+
+
+
+    <ul id="gamesList">
+    </ul>
+    <script src="day2.js"></script>
+
+</body>
+
+</html>
